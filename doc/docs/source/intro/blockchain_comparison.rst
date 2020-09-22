@@ -3,7 +3,7 @@ Offset vs Blockchain
 
 The recent rise in popularity of digital currencies might make it difficult to
 understand what makes Offset different in its approach to money and payments.
-We present here the differences between Offset and a blockchain based digital
+We present here the differences between Offset and a blockchain-based digital
 currency.
 
 Summary
@@ -21,7 +21,7 @@ Summary
      - No
 
    * - :ref:`security-foundation`
-     - Proof of work (Mining)
+     - Proof-of-work (Mining)
      - Trust between people
 
    * - :ref:`origin-of-money`
@@ -63,10 +63,10 @@ Summary
 Global consensus
 ----------------
 
-Global consensus is a core idea powering blockchain based digital currencies:
+Global consensus is a core idea powering blockchain-based digital currencies:
 All the participants in a blockchain network try to maintain together a single
-view of the current state of balances for all users. Blockchain based currencies
-usually use proof of work as a technology to acheive consensus: the ledger that
+view of the current state of balances for all users. Blockchain-based currencies
+usually use proof-of-work as a technology to achieve consensus: the ledger that
 took the most effort to create is chosen as the global truth.
 
 .. figure:: images/longest_chain_rule.png
@@ -89,7 +89,7 @@ system!**
   The figure shows how Offset keeps balances in a decentralized manner. Blue
   dots are Offset nodes, brackets represent credit limits, and green arrows
   represent the current balance between a pair of nodes. Every Offset node only
-  has to maintain balace information with nodes he has direct relation to.
+  has to maintain balance information with nodes he has direct relation to.
 
 
 Offset's approach makes it much more efficient than its blockchain counterparts.
@@ -101,22 +101,22 @@ and the storage required for every user is of a very small constant size.
 Security foundation
 -------------------
 
-Decentralized network can be subverted when populated by large amounts of
+A decentralized network can be subverted when populated by large amounts of
 identities all belonging to a single malicious adversary. This kind of attack
 is called a `Sybil attack <https://en.wikipedia.org/wiki/Sybil_attack>`_. We
 compare here the mitigations used in blockchain systems and in Offset against
-sybil attacks.
+Sybil attacks.
 
-Blockchain systems use proof of work as a safeguard against Sybil attacks. This
+Blockchain systems use proof-of-work as a safeguard against Sybil attacks. This
 idea can be simply described as: "one processor, one vote". **blockchain
 networks rely on the fact that computation power is rare.**
 
 Therefore an adversary has to gain meaningful computation power before he can
-obtain influence over a blockchain network. In blockchain based network, having
+obtain influence over a blockchain network. In a blockchain-based network, having
 large computation power can provide an adversary with the ability to double
 spend money.
 
-Offset does not make use of Proof of work. Instead, Offset uses trust between
+Offset does not make use of Proof-of work. Instead, Offset uses trust between
 people as a safeguard against Sybil attacks. In order to use Offset, a user
 has to set up mutual credit lines with a few Offset friends. Friends should be
 chosen carefully! Friends will usually be people the user has real world
@@ -170,8 +170,8 @@ Charli's balance with respect to Bob is ``-x``. The sum of those two balances
 is always ``0``.
 
 We count the amount of money in an Offset network by summing all the positive
-balances. For example purposes, consider again the two Offset friends: Bob and
-Charli. Suppose that initially the balance between Bob and Charli is ``0``.
+balances. For example, consider again the two Offset friends: Bob and
+Charli. Suppose that initially, the balance between Bob and Charli is ``0``.
 
 
 .. image:: images/bob_charli_mutual_0.svg
@@ -205,7 +205,7 @@ destroyed.
 Incentives
 ----------
 
-Most blockchain based digital currencies reward first adopters: New money is
+Most blockchain-based digital currencies reward first adopters: New money is
 easier to create in the beginning. Therefore people want to join early, in
 the hope of becoming rich when late users join the network.
 
@@ -222,12 +222,12 @@ amount of Bitcoins ever created is limited to about 21 million.
   dollar with the same computation power. Chart Taken from from `bitinfocharts
   <https://bitinfocharts.com/comparison/bitcoin-mining_profitability.html#log>`__.
 
-Contrast with blockchain based currencies, **you will not become rich by joining
+Contrast with blockchain-based currencies, **you will not become rich by joining
 Offset early**. Early and late Offset users have the same money creation
 power. 
 
 The money supply in Offset matches the size of the market, and so
-Offset currencies stick to their original value. Unlike blockchain based
+Offset currencies stick to their original value. Unlike blockchai-based
 currencies, there is no point in speculating or gambling on the future value
 of Offset currencies.
 
@@ -242,12 +242,12 @@ the Offset "game".
 Efficiency
 ----------
 
-Performing transactions in a blockchain based currency is very expensive.
+Performing transactions in a blockchain-based currency is very expensive.
 Consider a new transaction being issued to a blockchain network. In the typical
 blockchain currency, the transaction is sent to all the network participants.
 Each participant has to verify the transaction. 
 
-The network participants then have to perform expensive proof of work to
+The network participants then have to perform expensive proof-ofwork to
 maintain consensus over the current state of the blockchain. Taking Bitcoin for
 example:
 
@@ -264,7 +264,7 @@ the network participants forever. In Bitcoin for example, the size of the
 blockchain grows by a few gigabytes every month. Those same gigabytes are stored
 on all the machines running a Bitcoin client.
 
-Offset transactions are efficient, as Offset does not rely on proof of work or
+Offset transactions are efficient, as Offset does not rely on proof-of-work or
 global consensus. Every Offset transaction involves communication between a few
 select machines, without any significant amount of computation. The amount of
 data Offset nodes has to maintain is small and constant sized.
@@ -281,11 +281,11 @@ data Offset nodes has to maintain is small and constant sized.
 Transaction speed
 -----------------
 
-In a blockchain based digital currency, every batch of transactions has to
+In a blockchain-based digital currency, every batch of transactions has to
 propagate through all the participants of the blockchain network. As a means of
-avoiding money `double spending
+avoiding money `double-spending
 <https://en.wikipedia.org/wiki/Double-spending>`_, participants in the
-blockchain network have to perform expensive `proof of work
+blockchain network have to perform expensive `proof-of-work
 <https://en.wikipedia.org/wiki/Proof_of_work>`_ and achieve global consensus
 over the new state of the blockchain.
 
@@ -299,14 +299,14 @@ will want to wait at least one block, and for larger transactions where stronger
 certainty is required, users will sometimes prefer to even wait 6 blocks (about
 one hour).
 
-Offset transactions are very efficient with respect to their blockchain based
+Offset transactions are very efficient with respect to their blockchain-based
 counterparts. This is possible because Offset does not rely on a global
 consensus to operate.
 
 It usually takes no more than a few seconds for an Offset transaction to
 complete. an Offset transaction will usually pass through only a few computers
 in the network that are relevant to the transaction. Offset doesn't have to
-maintain any shared ledger, and therefore no consensus or proof of work are
+maintain any shared ledger, and therefore no consensus or proof-of-work are
 required.
 
 .. _transaction-certainty:
@@ -314,7 +314,7 @@ required.
 Transaction certainty
 ---------------------
 
-Payments with blockchain based currencies have some amount of uncertainty. When
+Payments with blockchain-based currencies have some amount of uncertainty. When
 you send money using blockchain currencies, you have to wait for a while. The
 more you wait, the more certain you are that the transaction completed
 successfuly, though you will never become 100% sure.
@@ -333,14 +333,14 @@ considered to be more and more certain as new blocks are added on top of it.
   <https://www.buybitcoinworldwide.com/confirmations/>`__.
 
 
-Most blockchain based currencies allows the sender of money to add transaction
+Most blockchain-based currencies allows the sender of money to add transaction
 fees. The fees are paid to the miners that run the expensive consensus
-computation (proof of work), hence miners prioritize transactions with higher
+computation (proof-of-work), hence miners prioritize transactions with higher
 fees. Paying higher fees for a transaction makes it get into the blockchain
 faster, hence increasing the certainty that it will complete successfuly in a
 timely manner.
 
-Unlike blockchain based transactions, Offset transactions do not have an element
+Unlike blockchain-based transactions, Offset transactions do not have an element
 of uncertainty. Offset transactions are 100% certain when complete. We call this
 characteristic **transaction atomicity**.
 
@@ -364,7 +364,7 @@ and it keeps growing in the rate of about 5GB every month.
   A chart showing historical data for Bitcoin's blockchain size. Taken from
   `blockchain.com <https://www.blockchain.com/charts/blocks-size>`__.
 
-Offset is storage efficient. In comparison, every Offset user has to save only a
+Offset is storage-efficient. In comparison, every Offset user has to save only a
 few kilobytes of information about his balances and current state, and that
 amount stays constant.
 
@@ -373,16 +373,15 @@ amount stays constant.
 Fees
 ----
 
-Sending money using a blockchain based currency usually requires extra
+Sending money using a blockchain-based currency usually requires extra
 transaction fees. This is extra money paid to make sure the transaction
 succeeds. Why are those fees required?
 
-Blockchain based currencies are usually operated by miners: Those are machines
-that run the computationaly expensive global consensus algorithm, Also known as proof of
-work.
+Blockchain-based currencies are usually operated by miners: Those are machines
+that run the computationaly expensive global consensus algorithm, also known as proof-of-work.
 
 Running a miner is expensive, as it requires electricity, proper cooling and
-other maintanence. To cover those expenses, miners are incentivized by receiving
+other maintenance. To cover those expenses, miners are incentivized by collecting
 transaction fees. In Bitcoin, for example, the average transaction fee (5/2020)
 is a few US dollars. 
 
@@ -391,7 +390,7 @@ with lower fees. Hence users that want to make sure their transaction is
 processed quickly have to provide large enough fees.
 
 If transaction fees are too low, it will become not profitable to run a miner.
-Therefore blockchain based networks have a theoretical lower bound over the
+Therefore blockchain-based networks have a theoretical lower bound over the
 transaction fees [2]_. This lower bound is related to the amount of miners in
 the network, the amount of transactions (per unit of time) and to the costs of
 computation.
@@ -409,7 +408,7 @@ Offset does not require a global consensus, and has no miners. It is extremely
 cheap to run an Offset node, and so Offset fees are mostly unrelated to
 computation costs. Offset fees are determined by Offset users. Every user can
 decide the fees required for a certain Offset friend to transfer a transaction
-through him. 
+through him.
 
 It is too early to know, though we believe that Offset fees will be mostly
 related to risk management. For example, a large Offset hub might take larger
@@ -433,9 +432,9 @@ key, and therefore he has to be online in order to collect the incoming payment.
 
 
 .. [1] 
-   There are many blockchain based digital currencies, therefore the comparison
+   There are many blockchain-based digital currencies, therefore the comparison
    might fail to generalize over all of them. When in doubt, the comparison
    refers to the characteristics of Bitcoin.
 
 
-.. [2] Unless miners are willing to lose money
+.. [2] Unless miners are willing to lose money.
